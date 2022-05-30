@@ -20,11 +20,16 @@
     
     <script defer src="/javascripts/fileUpload.js"></script>
 
-    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <title>Mybrary</title>
 </head>
 <body>
-    <%- include('../partials/header.ejs')%>
-    <%- include('../partials/errorMessage.ejs')%>
-    <%- body %>
+    <div class="container">
+        <%- include('../partials/header.ejs')%>
+        <div class="inner-container">
+            <%- include('../partials/errorMessage.ejs')%>
+            <%- body %>
+        </div>
+    </div>
 </body>
 </html>
